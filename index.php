@@ -118,12 +118,12 @@ if (isset($_SESSION['email'])) {
             <a href="#">Home</a>
             <a href="rooms.php">Rooms</a>
             <a href="about.html">About</a>
-            <a href="contact.php">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
             <a href="logout.php">Logout</a>
         </div>
     </div>
     <div class="user-info">
-        Logged in user: <strong><?php echo htmlspecialchars($name); ?></strong>
+        <strong>Hey <?php echo htmlspecialchars($name); ?></strong>
     </div>
     <div class="welcome-section">
         <h1>Welcome to Vishal Kumar Hotel</h1>

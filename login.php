@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="email" name="email" placeholder="email" required><br>
             <input type="password" name="password" placeholder="password" required><br>
             <button type="submit">Login</button>
-            <a href="signup.php">dont have an acc?</a>
+            <a href="signup.php">don't have an account?</a>
         </form>
     </div>
 </body>

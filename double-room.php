@@ -28,7 +28,7 @@ $result = $conn->query($sql);
 
 <div class="section-p1">
     <h2>Double Rooms</h2>
-    <p>Choose from our double rooms stored in database</p>
+    <p>Choose from our double rooms</p>
 
     <div class="pro-container">
         <?php if ($result->num_rows > 0): ?>

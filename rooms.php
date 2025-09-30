@@ -42,9 +42,9 @@ if (isset($_SESSION['email'])) {
     </div>
 
     <div id="rooms" class="section-p1">
-        <h2>our rooms</h2>
+        <h2>Our Rooms</h2>
 
-        <p>discover our rooms</p>
+        <p>Discover our rooms</p>
         <div class="pro-container">
             <div class="pro">
                 <a href="single-room.php">

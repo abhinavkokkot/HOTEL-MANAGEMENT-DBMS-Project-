@@ -188,3 +188,6 @@ h2 a:hover {
         align-items: center;
     }
 }
+a{
+    text-decoration: none;
+}
