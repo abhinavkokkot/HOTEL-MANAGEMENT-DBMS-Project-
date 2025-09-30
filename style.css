@@ -1,0 +1,49 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color:darksalmon;
+}
+
+.nav{
+    background-color:aqua;
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    align-items: space-between;
+}
+.logo{
+    flex: 1;
+}
+.nav-links{
+    flex: 1;
+    text-align: right; 
+    
+
+    
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
