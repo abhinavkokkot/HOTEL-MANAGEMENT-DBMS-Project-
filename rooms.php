@@ -32,7 +32,7 @@ if (isset($_SESSION['email'])) {
             <a href="#">vishal kumar</a>
         </div>
         <div class="nav-link">
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
         <a href="rooms.php">rooms</a>
         <a href="about.html">about</a>
         <a href="contact.php">contact us</a>

@@ -10,13 +10,13 @@ $result = $conn->query($sql);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Double Rooms - GrandStay</title>
+    <title>Double Rooms - hotel transylvania</title>
     <link rel="stylesheet" href="style-rooms.css">
 </head>
 <body>
 
 <div class="nav">
-    <div class="logo"><a href="index.php">GrandStay</a></div>
+    <div class="logo"><a href="index.php">hotel transylvania</a></div>
     <div class="nav-link">
         <a href="index.php">Home</a>
         <a href="rooms.php">Rooms</a>

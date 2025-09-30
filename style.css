@@ -1,49 +1,105 @@
-
+/* style.css */
 body {
+    /*background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);*/
+    background-image: url('https://i.pinimg.com/1200x/dc/3b/61/dc3b61958f6a2df33182b0f1986bce2e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;                
     margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color:darksalmon;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.nav{
-    background-color:aqua;
-    padding: 20px 10px 10px 10px;
+.nav {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(102,166,255,0.08);
+    padding: 1rem 2rem;
     display: flex;
-    align-items: space-between;
-}
-.logo{
-    flex: 1;
-}
-.nav-links{
-    flex: 1;
-    text-align: right; 
-    
-
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav a{
+.logo a {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #66a6ff;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
+.nav-link a {
+    margin: 0 1rem;
+    color: #11443a;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
 
+.nav-link a:hover {
+    color: #66a6ff;
+}
 
-
-
-h2 {
+.welcome-section {
     text-align: center;
-    margin-top: 50px;
-    font-size: 28px;
-    color: #333;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-    nav a {
-        float: none;
-        display: block;
-        text-align: left;
+.welcome-section h1 {
+    font-size: 2.5rem;
+    color: #ffe67e;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #d8dcff;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(102,166,255,0.10);
+    padding: 2rem 1.5rem;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px) scale(1.04);
+}
+
+.feature-card h3 {
+    color: #ffe67e;
+    margin-bottom: 0.7rem;
+}
+
+.feature-card p {
+    color: #d4dccc;
+    font-size: 1rem;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d4dccc;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
     }
 }
-
