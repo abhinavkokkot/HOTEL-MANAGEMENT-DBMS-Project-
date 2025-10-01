@@ -27,17 +27,17 @@ $stmt->close();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Bookings - GrandStay</title>
+    <title>hotel transylvania</title>
     <link rel="stylesheet" href="style-profile.css">
 </head>
 <body>
 <div class="nav">
-    <div class="logo"><a href="index.php">GrandStay</a></div>
+    <div class="logo"><a href="index.php">hotel transylvania</a></div>
     <div class="nav-link">
         <a href="index.php">Home</a>
         <a href="rooms.php">Rooms</a>
         <a href="about.html">About</a>
-        <a href="contact.php">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
         <a href="logout.php">Logout</a>
     </div>
 </div>

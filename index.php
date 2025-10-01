@@ -3,7 +3,7 @@
 session_start();
 include 'conn.php';
 
-$name = ""; // initialize
+$name = "";
 
 if (isset($_SESSION['email'])) {
     $email = $_SESSION['email'];
@@ -22,7 +22,6 @@ if (isset($_SESSION['email'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <?php if (isset($_SESSION['email'])): ?>
     <div class="nav">
         <div class="logo">
@@ -67,7 +66,8 @@ if (isset($_SESSION['email'])) {
         </div>
     </div>
 <?php else: ?>
-    <?php header("Location: login.php"); exit; ?>
+    <?php header("Location: login.php");
+    exit; ?>
 <?php endif; ?>
 
 </body>

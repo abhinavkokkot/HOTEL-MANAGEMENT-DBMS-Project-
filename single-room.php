@@ -27,7 +27,8 @@ $result = $conn->query($sql);
             <a href="profile.php">profile</a>
             <a href="logout.php">Logout</a>
         </div>
-    </div>
+</div>
+
 
 <div class="section-p1">
     <h2>Single Rooms</h2>

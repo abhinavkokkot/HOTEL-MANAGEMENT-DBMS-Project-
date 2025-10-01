@@ -1,125 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hotel Management - Home</title>
-    <style>
-       body {
-    background: url("hotel.jpg") no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-}
+  <title>Contact - Hotel Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: url("hotel.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+    }
 
-        .nav {
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(102,166,255,0.08);
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo a {
-            font-size: 1.7rem;
-            font-weight: bold;
-            color: #66a6ff;
-            text-decoration: none;
-            letter-spacing: 1px;
-        }
-        .nav-link a {
-            margin: 0 1rem;
-            color: #333;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav-link a:hover {
-            color: #66a6ff;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style-contact.css">
+    /* Navigation */
+    .nav {
+      background: rgba(255,255,255,0.9);
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      z-index: 10;
+    }
+    .logo a { 
+      text-decoration: none; 
+      color: #2b6cb0; 
+      font-size: 1.8rem; 
+      font-weight: bold;
+    }
+    .nav-link a { 
+      margin: 0 1rem; 
+      text-decoration: none; 
+      color: #333; 
+      font-weight: 500;
+      transition: color 0.3s; 
+    }
+    .nav-link a:hover { color: #2b6cb0; }
+
+    /* Heading */
+    .heading {
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      margin-top: 80px;
+      margin-bottom: 2rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-card {
+      flex: 1 1 250px;
+      background: rgba(0,0,0,0.6);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      text-align: center;
+      transition: transform 0.5s, background 0.3s, box-shadow 0.3s;
+    }
+    .contact-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: rgba(0,0,0,0.8);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+    }
+
+    .contact-card .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffd700;
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700; }
+      100% { text-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700; }
+    }
+
+    .contact-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .contact-card p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #dbeafe;
+    }
+
+    @media (max-width: 900px) {
+      .contact-section { flex-direction: column; align-items: center; }
+    }
+  </style>
 </head>
 <body>
-    <div class="nav">
+
+  <!-- Navigation -->
+  <div class="nav">
         <div class="logo">
-            <a href="#">vishal kumar</a>
+            <a href="#">hotel transylvania</a>
         </div>
         <div class="nav-link">
             <a href="index.php">Home</a>
             <a href="rooms.php">Rooms</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact Us</a>
+            <a href="profile.php">profile</a>
             <a href="logout.php">Logout</a>
         </div>
     </div>
-    <div class="heading">
-      <h1>Contact Us</h1>
-      <p>We would love to hear from you! Please reach out with any questions or feedback.</p>
+
+  <!-- Heading -->
+  <div class="heading">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you! Reach out via any of the methods below.</p>
+  </div>
+
+  <!-- Contact Info Section -->
+  <div class="contact-section" id="contact-section">
+    <div class="contact-card">
+      <div class="icon"><i class="fa fa-map-marker"></i></div>
+      <h3>Address</h3>
+      <p>Vimal Jyothi, Chemperi, Kerala</p>
     </div>
-  <div class="contact">
-    
-    <div class="entrys">
-        <div class="form-control">
-        <input type="value" required="">
-        <label>
-        <span style="transition-delay:0ms">U</span><span style="transition-delay:50ms">s</span><span style="transition-delay:100ms">e</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">n</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">m</span><span style="transition-delay:350ms">e</span>
-    </label>
-</div>
-      
-<div class="form-control">
-    <input type="value" required="">
-    <label>
-        <span style="transition-delay:0ms">E</span><span style="transition-delay:50ms">m</span><span style="transition-delay:100ms">a</span><span style="transition-delay:150ms">i</span><span style="transition-delay:350ms">l</span>
-    </label>
-</div>
-      
-<div class="form-control">
-    <input type="value" required="">
-    <label>
-        <span style="transition-delay:0ms">P</span><span style="transition-delay:50ms">h</span><span style="transition-delay:100ms">o</span><span style="transition-delay:150ms">n</span><span 
-        style="transition-delay:350ms">e</span>
-    </label>
-</div>
-      
-<div class="form-control">
-    <input type="value" required="">
-    <label>
-        <span style="transition-delay:0ms">S</span><span style="transition-delay:50ms">u</span><span style="transition-delay:100ms">b</span><span style="transition-delay:150ms">j</span><span style="transition-delay:200ms">e</span><span style="transition-delay:250ms">c</span><span style="transition-delay:350ms">t</span>
-    </label>
-</div>
-    
-<div class="form-control">
-    <input type="text" required="">
-    <label>
-        <span style="transition-delay:0ms">Y</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">u</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">M</span><span style="transition-delay:250ms">e</span><span style="transition-delay:250ms">s</span><span style="transition-delay:250ms">s</span><span style="transition-delay:300ms">a</span><span
-        style="transition-delay:350ms">age</span>
-    </label>
-</div>
-      <button type="submit">Send Message</button>
+
+    <div class="contact-card">
+      <div class="icon"><i class="fa fa-phone"></i></div>
+      <h3>Phone</h3>
+      <p>+91 9526932167</p>
     </div>
-    <div class="details">
-      <div class="box">
-        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div class="text">
-          <h3>Address</h3>
-          <p>vimal jyothi, chemperi, kerala</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-        <div class="text">
-          <h3>Phone</h3>
-          <p>+91 9526932167</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-        <div class="text">
-          <h3>Email</h3>
-          <p>vishalvivek@gmail.com</p>
+
+    <div class="contact-card">
+      <div class="icon"><i class="fa fa-envelope"></i></div>
+      <h3>Email</h3>
+      <p>vishalvivek@gmail.com</p>
     </div>
   </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
 </html>

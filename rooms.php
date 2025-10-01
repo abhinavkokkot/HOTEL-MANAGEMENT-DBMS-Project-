@@ -29,16 +29,6 @@ if (isset($_SESSION['email'])) {
 <?php if (isset($_SESSION['email'])): ?>
     <div class="nav">
         <div class="logo">
-<<<<<<< HEAD
-            <a href="#">WELCOME</a>
-        </div>
-        <div class="nav-link">
-        <a href="#">Home</a>
-        <a href="rooms.php">rooms</a>
-        <a href="about.html">about</a>
-        <a href="contact.php">contact us</a>
-        <a href="logout.php">Logout</a>
-=======
             <a href="#">hotel transylvania</a>
         </div>
         <div class="nav-link">
@@ -48,7 +38,7 @@ if (isset($_SESSION['email'])) {
             <a href="contact.html">Contact Us</a>
             <a href="profile.php">profile</a>
             <a href="logout.php">Logout</a>
->>>>>>> ec1b4f0 (contact)
+
         </div>
     </div>
     </div>

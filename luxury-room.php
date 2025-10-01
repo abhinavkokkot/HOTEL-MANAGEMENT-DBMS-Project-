@@ -2,7 +2,6 @@
 session_start();
 include 'conn.php';
 
-// Fetch all luxury rooms from database
 $sql = "SELECT * FROM rooms WHERE type = 'luxury'";
 $result = $conn->query($sql);
 ?>
