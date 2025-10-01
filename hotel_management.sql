@@ -1,10 +1,9 @@
-
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2025 at 07:40 AM
+-- Generation Time: Oct 01, 2025 at 12:43 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -89,25 +88,25 @@ CREATE TABLE `rooms` (
 --
 
 INSERT INTO `rooms` (`room_id`, `title`, `description`, `price`, `image`, `type`) VALUES
-(2, 'Premium Single Room', 'Larger room with modern furniture and city view.', 2500, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'single'),
-(3, 'Economy Single Room', 'Compact room, perfect for short stays.', 1800, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'single'),
-(4, 'Deluxe Single Room', 'Elegant room with premium linens and decor.', 3000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'single'),
-(5, 'Suite Single Room', 'Spacious single suite with living area.', 3500, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'single'),
-(6, 'Luxury Single Room', 'Top-class room with luxury amenities and view.', 4000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'single'),
-(7, 'Standard Double Room', 'Cozy double room with all essential amenities.', 3000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'double'),
+(2, 'Premium Single Room', 'Larger room with modern furniture and city view.', 2500, 'https://i.pinimg.com/736x/f6/ed/c4/f6edc4d8d0edd8c75ad6c32366aa1356.jpg', 'single'),
+(3, 'Economy Single Room', 'Compact room, perfect for short stays.', 1800, 'https://i.pinimg.com/736x/b4/a9/e7/b4a9e7c732c5f8fc56d3ce5a1fbd7a0c.jpg', 'single'),
+(4, 'Deluxe Single Room', 'Elegant room with premium linens and decor.', 3000, 'https://i.pinimg.com/736x/af/a3/ea/afa3ea4f651abbba7375160d8dc5df85.jpg', 'single'),
+(5, 'Suite Single Room', 'Spacious single suite with living area.', 3500, 'https://i.pinimg.com/736x/98/29/84/982984ac69dd57a91ee27d7ee62d8409.jpg', 'single'),
+(6, 'Luxury Single Room', 'Top-class room with luxury amenities and view.', 4000, 'https://i.pinimg.com/1200x/0a/02/69/0a02692f7c939a4585dc7b223d5301d3.jpg', 'single'),
+(7, 'Standard Double Room', 'Cozy double room with all essential amenities.', 3000, 'https://i.pinimg.com/736x/5b/bd/95/5bbd95ea9e27f35e7658f95ceed6530c.jpg', 'double'),
 (8, 'Premium Double Room', 'Larger room with modern furniture and city view.', 3500, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'double'),
-(9, 'Economy Double Room', 'Compact room, perfect for short stays.', 2800, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'double'),
-(10, 'Deluxe Double Room', 'Elegant room with premium linens and decor.', 4000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'double'),
-(11, 'Suite Double Room', 'Spacious double suite with living area.', 4500, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'double'),
-(12, 'Luxury Double Room', 'Top-class room with luxury amenities and view.', 5000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'double'),
-(13, 'Standard Luxury Room', 'Elegant luxury room with all essential amenities.', 5000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'luxury'),
-(14, 'Premium Luxury Room', 'Spacious luxury room with modern furniture and city view.', 6000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'luxury'),
+(9, 'Economy Double Room', 'Compact room, perfect for short stays.', 2800, 'https://i.pinimg.com/736x/6e/7f/6b/6e7f6b54c9eb9ced83a528c03d314f8a.jpg', 'double'),
+(10, 'Deluxe Double Room', 'Elegant room with premium linens and decor.', 4000, 'https://i.pinimg.com/736x/59/d8/eb/59d8eb2b842dd36c629e60cda3c36b70.jpg', 'double'),
+(11, 'Suite Double Room', 'Spacious double suite with living area.', 4500, 'https://i.pinimg.com/736x/eb/24/21/eb2421fdee6f35960287ec956ad7c267.jpg', 'double'),
+(12, 'Luxury Double Room', 'Top-class room with luxury amenities and view.', 5000, 'https://i.pinimg.com/736x/08/f3/60/08f360cee63a5c3b19117422048e1e2c.jpg', 'double'),
+(13, 'Standard Luxury Room', 'Elegant luxury room with all essential amenities.', 5000, 'https://i.pinimg.com/736x/0c/55/6e/0c556e8e56f53428cf3a8d47af941ba9.jpg', 'luxury'),
+(14, 'Premium Luxury Room', 'Spacious luxury room with modern furniture and city view.', 6000, 'https://i.pinimg.com/736x/2a/a4/a7/2aa4a7729c4e0b9664d7653d867d454b.jpg', 'luxury'),
 (15, 'Economy Luxury Room', 'Affordable luxury room, perfect for short stays.', 4500, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'luxury'),
-(16, 'Deluxe Luxury Room', 'Premium luxury room with elegant decor and linens.', 7000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'luxury'),
-(17, 'Suite Luxury Room', 'Large luxury suite with separate living area.', 8000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'luxury'),
-(18, 'Presidential Luxury Room', 'Top-class luxury room with exclusive amenities and view.', 10000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'luxury'),
+(16, 'Deluxe Luxury Room', 'Premium luxury room with elegant decor and linens.', 7000, 'https://i.pinimg.com/736x/b7/42/00/b742009e77d5e4bdc716fa09a36ad7c4.jpg', 'luxury'),
+(17, 'Suite Luxury Room', 'Large luxury suite with separate living area.', 8000, 'https://i.pinimg.com/736x/f9/71/ff/f971ff446292531c2b49b792a566a884.jpg', 'luxury'),
+(18, 'Presidential Luxury Room', 'Top-class luxury room with exclusive amenities and view.', 10000, 'https://i.pinimg.com/736x/db/a3/71/dba371fd482880193d1166da70ddda38.jpg', 'luxury'),
 (19, 'wewe', 'roooooom', 12, 'https://i.pinimg.com/736x/2c/7d/d4/2c7dd4eae0ac6acf12fdeff7326958f9.jpg', 'single'),
-(21, 'Standard single Room', 'Elegant luxury room with all essential amenities.', 4000, 'https://i.pinimg.com/736x/e7/73/b0/e773b09f1432bdf6c73695708fd15f3a.jpg', 'single');
+(21, 'Standard single Room', 'Elegant luxury room with all essential amenities.', 4000, 'https://i.pinimg.com/1200x/a8/e7/68/a8e76867cce390e6c72c9e85450890d1.jpg', 'single');
 
 --
 -- Indexes for dumped tables
@@ -142,7 +141,7 @@ ALTER TABLE `rooms`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `rooms`
@@ -165,4 +164,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
->>>>>>> ec1b4f0 (contact)
