@@ -29,10 +29,10 @@ if (isset($_SESSION['email'])) {
 <?php if (isset($_SESSION['email'])): ?>
     <div class="nav">
         <div class="logo">
-            <a href="#">vishal kumar</a>
+            <a href="#">WELCOME</a>
         </div>
         <div class="nav-link">
-        <a href="index.php">Home</a>
+        <a href="#">Home</a>
         <a href="rooms.php">rooms</a>
         <a href="about.html">about</a>
         <a href="contact.php">contact us</a>
