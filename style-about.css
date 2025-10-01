@@ -8,7 +8,7 @@ body {
 }
 
 /* Navbar styling */
-header nav {
+.nav {
     background: #fff;
     box-shadow: 0 2px 8px rgba(102,166,255,0.08);
     padding: 1rem 2rem;
@@ -17,7 +17,7 @@ header nav {
     align-items: center;
 }
 
-header nav .logo {
+.logo a {
     font-size: 1.7rem;
     font-weight: bold;
     color: #66a6ff;
@@ -25,27 +25,16 @@ header nav .logo {
     letter-spacing: 1px;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
+.nav-link a {
     margin: 0 1rem;
-}
-
-header nav ul li a {
-    color: #333;
+    color: #11443a;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
     transition: color 0.2s;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active {
+.nav-link a:hover {
     color: #66a6ff;
 }
 

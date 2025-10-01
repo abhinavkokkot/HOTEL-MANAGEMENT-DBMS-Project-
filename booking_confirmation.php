@@ -45,15 +45,18 @@ if (!$booking) {
 </head>
 <body>
 <div class="nav">
-    <div class="logo"><a href="index.php">GrandStay</a></div>
-    <div class="nav-link">
-        <a href="index.php">Home</a>
-        <a href="rooms.php">Rooms</a>
-        <a href="about.html">About</a>
-        <a href="contact.php">Contact Us</a>
-        <a href="logout.php">Logout</a>
+        <div class="logo">
+            <a href="#">hotel transylvania</a>
+        </div>
+        <div class="nav-link">
+            <a href="#">Home</a>
+            <a href="rooms.php">Rooms</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="profile.php">profile</a>
+            <a href="logout.php">Logout</a>
+        </div>
     </div>
-</div>
 
 <div class="section-p1">
     <h2>Booking Confirmation</h2>

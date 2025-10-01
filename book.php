@@ -156,6 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 </head>
 <body>
+<<<<<<< HEAD
 <div class="nav">
     <div class="logo"><a href="index.php">Room</a></div>
     <div class="nav-link">
@@ -164,8 +165,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="about.html">About</a>
         <a href="contact.php">Contact</a>
         <a href="logout.php">Logout</a>
+=======
+  <div class="nav">
+        <div class="logo">
+            <a href="#">hotel transylvania</a>
+        </div>
+        <div class="nav-link">
+            <a href="index.php">Home</a>
+            <a href="rooms.php">Rooms</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="profile.php">profile</a>
+            <a href="logout.php">Logout</a>
+        </div>
+>>>>>>> ec1b4f0 (contact)
     </div>
-</div>
 
 <div class="section-p1">
     <h2>Book: <?php echo $room['title']; ?></h2>

@@ -97,6 +97,10 @@ body {
     font-size: 1.1rem;
 }
 
+.feature-card > a {
+    text-decoration: none;
+}
+
 @media (max-width: 900px) {
     .features {
         flex-direction: column;
