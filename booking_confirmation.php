@@ -40,7 +40,7 @@ if (!$booking) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Booking Confirmation - GrandStay</title>
+    <title>Booking Confirmation</title>
     <link rel="stylesheet" href="style-rooms.css">
 </head>
 <body>
