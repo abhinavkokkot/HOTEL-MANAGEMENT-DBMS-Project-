@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 
 <div class="nav">
         <div class="logo">
-            <a href="#">hotel transylvania</a>
+            <a href="#">HOTEL TRANSYLVANIYA</a>
         </div>
         <div class="nav-link">
             <a href="index.php">Home</a>
