@@ -1,3 +1,26 @@
+<style>
+    .alert-box {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f44336; /* red background */
+        color: white;
+        padding: 15px 25px;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 9999;
+        animation: fadeInOut 4s ease-in-out;
+    }
+
+    @keyframes fadeInOut {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+</style>
 <?php
 session_start();
 include 'conn.php';
@@ -12,19 +35,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
     $result = $stmt->get_result();
 
-    if ($row = $result->fetch_assoc()) {
-        if (password_verify($password, $row['password'])) {
-            $_SESSION['email'] = $row['email'];
-            header("Location: index.php");
-            exit;
-        } else {
-            echo "Invalid password!";
-        }
+   if ($row = $result->fetch_assoc()) {
+    if (password_verify($password, $row['password'])) {
+        $_SESSION['email'] = $row['email'];
+        header("Location: index.php");
+        exit;
     } else {
-        echo "invalid email!";
+        echo "<div class='alert-box'>⚠️ Incorrect password. Please try again.</div>";
     }
+} else {
+    echo "<div class='alert-box'>❌ No account found with that email address.</div>";
+}
+
 }
 ?>
+
 
 <!DOCTYPE html>
 <html>

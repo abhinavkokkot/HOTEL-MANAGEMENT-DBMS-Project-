@@ -1,26 +1,63 @@
+<style>
+    .alert-box {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 25px;
+        border-radius: 8px;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 9999;
+        animation: fadeInOut 4s ease-in-out;
+    }
+    .alert-success { background-color: #4CAF50; } /* Green */
+    .alert-error { background-color: #f44336; }   /* Red */
+
+    @keyframes fadeInOut {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+</style>
 <?php
 include 'conn.php';
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
+    $name     = trim($_POST['name']);
+    $email    = trim($_POST['email']);
+    $phone    = trim($_POST['phone']);
+    $address  = trim($_POST['address']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
+    // Check if email already exists
+    $check = $conn->prepare("SELECT email FROM customers WHERE email = ?");
+    $check->bind_param("s", $email);
+    $check->execute();
+    $check->store_result();
 
-    $sql = "INSERT INTO customers ( name,email,phone,address,password) VALUES (?,?,?,?,?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssiss", $name,$email,$phone,$address,$password);
-
-    if ($stmt->execute()) {
-        $_SESSION['email'] = $email;
-        header("Location: index.php");
-        exit;
+    if ($check->num_rows > 0) {
+        echo "<div class='alert-box alert-error'>⚠️ Email already registered. Please log in.</div>";
     } else {
-        echo "Error: " . $stmt->error;
+        $sql = "INSERT INTO customers (name, email, phone, address, password) VALUES (?, ?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ssiss", $name, $email, $phone, $address, $password);
+
+        if ($stmt->execute()) {
+            $_SESSION['email'] = $email;
+            echo "<div class='alert-box alert-success'>✅ Registration successful! Redirecting...</div>";
+            header("refresh:2; url=index.php"); // waits 2 seconds before redirect
+            exit;
+        } else {
+            echo "<div class='alert-box alert-error'>❌ Error: " . htmlspecialchars($stmt->error) . "</div>";
+        }
     }
+
+    $check->close();
+    $stmt->close();
 }
 ?>
 <!DOCTYPE html>
